@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script type="text/javascript">
+
+window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer", {
+		title:{
+			text: "Covid-19 bulgaria"              
+		},
+		data: [              
+		{
+			// Change type to "doughnut", "line", "splineArea", etc.
+			type: "line",
+			dataPoints: [              
+				{ label: "3/7/20",  y: 0  },
+                { label: "3/8/20",  y: 4  },
+                { label: "3/9/20",  y: 4  },
+                { label: "3/10/20",  y: 4  },
+				{ label: "3/11/20",  y: 7  },
+                { label: "3/12/20",  y: 7  },
+                { label: "3/13/20",  y: 23  },
+                { label: "3/14/20",  y: 41  },
+                { label: "3/15/20",  y: 51  },
+                { label: "3/16/20",  y: 52  },
+                { label: "3/17/20",  y: 67  },
+                { label: "3/18/20",  y: 92  },
+                { label: "3/19/20",  y: 94  },
+                { label: "3/20/20",  y: 127  },
+                { label: "3/21/20",  y: 163  },
+                { label: "3/22/20",  y: 187  },
+                { label: "3/23/20",  y: 201  },
+                { label: "3/24/20",  y: 218  },
+                { label: "3/25/20",  y: 242  },
+                { label: "3/26/20",  y: 264  },
+				{ label: "3/27/20",  y: 293  },
+                { label: "3/28/20",  y: 331  },
+                { label: "3/29/20",  y: 346  },
+                { label: "3/30/20",  y: 359  },
+				{ label: "3/31/20",  y: 399  },
+                { label: "4/1/20",  y: 422  },
+                { label: "4/2/20",  y: 457  },
+                { label: "4/3/20",  y: 485  },
+                { label: "4/4/20",  y: 503  },
+                { label: "4/5/20",  y: 531  },
+                   
+                             
+			]
+		}
+		]
+	});
+	chart.render();
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 800px; width: 100%;"></div>
+</body>
+</html>
